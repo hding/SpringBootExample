@@ -1,5 +1,4 @@
-It requires jdk 1.8
-
+It requires java jdk 1.8
 
 
 Build the project:
