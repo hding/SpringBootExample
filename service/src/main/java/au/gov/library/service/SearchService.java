@@ -29,7 +29,9 @@ public class SearchService {
 
 	public Iterable<Book> findLentBook(Long id) {
 		Customer cc = userRepository.findOne(id);
-		Iterable<Book> bookList = cc.getLentBookList();
+		List<Book> result = cc.getLentBookList();
+		result.size();
+		Iterable<Book> bookList = result;
 
 		return bookList;
 	}
