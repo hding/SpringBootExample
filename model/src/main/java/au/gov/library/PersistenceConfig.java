@@ -47,8 +47,6 @@ public class PersistenceConfig {
 		factory.setPackagesToScan("au.gov.library.entity");
 		factory.setDataSource(dataSource());
 		Properties jpaProperties = new Properties();
-		jpaProperties.setProperty("hibernate.enable_lazy_load_no_trans",
-				env.getProperty("hibernate.enable_lazy_load_no_trans"));
 		jpaProperties.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
 
 		factory.setJpaProperties(jpaProperties);
